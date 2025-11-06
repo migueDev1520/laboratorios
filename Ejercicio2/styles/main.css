@@ -1,0 +1,75 @@
+.base {
+  background-color: #0000ff;
+}
+
+.important {
+  background-color: #000033;
+}
+
+.warning {
+  background-color: #00ffff;
+  color: black;
+}
+
+.font-primary {
+  font-family: "Georgia, serif";
+}
+
+.font-secondary {
+  font-family: "Tahoma, sans-serif";
+}
+
+.shadow-box {
+  width: 120px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.7);
+}
+
+.container {
+  display: flex;
+}
+
+.theme {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.theme .color-box {
+  width: 100px;
+  height: 50px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+.theme .base {
+  background-color: #0000ff;
+}
+.theme .important {
+  background-color: #000033;
+}
+.theme .warning {
+  background-color: #00ffff;
+  color: black;
+}
+.theme .font-primary {
+  font-family: "Georgia, serif";
+}
+.theme .font-secondary {
+  font-family: "Tahoma, sans-serif";
+}
+.theme .shadow-box {
+  width: 120px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.7);
+}/*# sourceMappingURL=main.css.map */

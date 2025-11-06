@@ -1,0 +1,72 @@
+@use "sass:color";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+$color-nav-bg: #333;
+$color-nav-link: #fff;
+$color-selected: #007bff;
+
+$nav-map: (
+  "home": "nav-home",
+  "blog": "nav-blog",
+  "activities": "nav-activities",
+  "about": "nav-about",
+);
+
+.navbar {
+  ul {
+    list-style: none;
+    background-color: $color-nav-bg;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav-link {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: $color-nav-link;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: color.scale($color-nav-bg, $lightness: 10%);
+    }
+  }
+}
+
+@each $page-name, $nav-link-class in $nav-map {
+  .page-#{$page-name} {
+    .#{$nav-link-class} {
+      background-color: $color-selected;
+      font-weight: bold;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    display: none;
+  }
+  .navbar {
+    height: 100vh;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+  }
+
+  .navbar li {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #ffffff1a;
+  }
+
+  .navbar .nav-link {
+    padding: 15px;
+  }
+}

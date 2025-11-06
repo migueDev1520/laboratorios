@@ -1,0 +1,37 @@
+$base-color: #0000ff;
+$important-color: #000033;
+$warning-color: #00ffff;
+
+$primary-font: "Georgia, serif";
+$secondary-font: "Tahoma, sans-serif";
+
+$box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.7);
+
+.base {
+  background-color: $base-color;
+}
+.important {
+  background-color: $important-color;
+}
+.warning {
+  background-color: $warning-color;
+  color: black;
+}
+
+.font-primary {
+  font-family: $primary-font;
+}
+
+.font-secondary {
+  font-family: $secondary-font;
+}
+
+.shadow-box {
+  width: 120px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  box-shadow: $box-shadow;
+}

@@ -1,0 +1,138 @@
+.box {
+  width: 100px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border-radius: 5px;
+  margin: 5px;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.container-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-1 .base-color {
+  background-color: red;
+  color: #fff;
+}
+.container-1 .darken-1 {
+  background-color: rgb(209.1, 0, 0);
+  color: #fff;
+}
+.container-1 .darken-2 {
+  background-color: rgb(163.2, 0, 0);
+  color: #fff;
+}
+.container-1 .darken-3 {
+  background-color: rgb(117.3, 0, 0);
+  color: #fff;
+}
+.container-1 .darken-4 {
+  background-color: rgb(71.4, 0, 0);
+  color: #fff;
+}
+.container-1 .lighten-1 {
+  background-color: rgb(255, 45.9, 45.9);
+  color: #000;
+}
+.container-1 .lighten-2 {
+  background-color: rgb(255, 91.8, 91.8);
+  color: #000;
+}
+.container-1 .lighten-3 {
+  background-color: rgb(255, 137.7, 137.7);
+  color: #000;
+}
+.container-1 .lighten-4 {
+  background-color: rgb(255, 183.6, 183.6);
+  color: #000;
+}
+
+.container-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-2 .base-color {
+  background-color: darkorange;
+  color: #fff;
+}
+.container-2 .darken-1 {
+  background-color: rgb(209.1, 114.8, 0);
+  color: #fff;
+}
+.container-2 .darken-2 {
+  background-color: rgb(163.2, 89.6, 0);
+  color: #fff;
+}
+.container-2 .darken-3 {
+  background-color: rgb(117.3, 64.4, 0);
+  color: #fff;
+}
+.container-2 .darken-4 {
+  background-color: rgb(71.4, 39.2, 0);
+  color: #fff;
+}
+.container-2 .lighten-1 {
+  background-color: rgb(255, 160.7, 45.9);
+  color: #000;
+}
+.container-2 .lighten-2 {
+  background-color: rgb(255, 181.4, 91.8);
+  color: #000;
+}
+.container-2 .lighten-3 {
+  background-color: rgb(255, 202.1, 137.7);
+  color: #000;
+}
+.container-2 .lighten-4 {
+  background-color: rgb(255, 222.8, 183.6);
+  color: #000;
+}
+
+.container-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-3 .base-color {
+  background-color: darkcyan;
+  color: #fff;
+}
+.container-3 .darken-1 {
+  background-color: rgb(0, 113.98, 113.98);
+  color: #fff;
+}
+.container-3 .darken-2 {
+  background-color: rgb(0, 88.96, 88.96);
+  color: #fff;
+}
+.container-3 .darken-3 {
+  background-color: rgb(0, 63.94, 63.94);
+  color: #fff;
+}
+.container-3 .darken-4 {
+  background-color: rgb(0, 38.92, 38.92);
+  color: #fff;
+}
+.container-3 .lighten-1 {
+  background-color: rgb(0, 205.78, 205.78);
+  color: #fff;
+}
+.container-3 .lighten-2 {
+  background-color: rgb(17.56, 255, 255);
+  color: #000;
+}
+.container-3 .lighten-3 {
+  background-color: rgb(84.34, 255, 255);
+  color: #000;
+}
+.container-3 .lighten-4 {
+  background-color: rgb(151.12, 255, 255);
+  color: #000;
+}/*# sourceMappingURL=mystyle.css.map */

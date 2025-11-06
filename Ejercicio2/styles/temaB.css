@@ -1,0 +1,30 @@
+.base {
+  background-color: #0000ff;
+}
+
+.important {
+  background-color: #000033;
+}
+
+.warning {
+  background-color: #00ffff;
+  color: black;
+}
+
+.font-primary {
+  font-family: "Georgia, serif";
+}
+
+.font-secondary {
+  font-family: "Tahoma, sans-serif";
+}
+
+.shadow-box {
+  width: 120px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.7);
+}/*# sourceMappingURL=temaB.css.map */

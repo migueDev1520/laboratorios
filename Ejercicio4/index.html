@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 4 - Card con Grid CSS</title>
+    <link rel="stylesheet" href="style.scss" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="card__image-container">
+        <img
+          src=""
+          alt="Imagen dinámica del contenido"
+          class="card__image"
+          id="cardImage"
+        />
+      </div>
+
+      <div class="card__content-area">
+        <h2 class="card__title" id="cardTitle">Title</h2>
+        <p class="card__description" id="cardDescription"></p>
+        <p class="card__published">
+          Published:
+          <span class="card__date" id="cardDate"></span>
+        </p>
+      </div>
+
+      <button class="card__button" id="cardButton">More info</button>
+    </div>
+
+    <script>
+      const cardData = {
+        imageUrl: "https://picsum.photos/300/200?random=1",
+
+        title: "Card Dinamica",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        date: "Septiembre 15, 2024",
+        buttonText: "Ver Detalles",
+        linkUrl: "#",
+      };
+
+      function updateCard(data) {
+        const imageElement = document.getElementById("cardImage");
+        const titleElement = document.getElementById("cardTitle");
+        const descriptionElement = document.getElementById("cardDescription");
+        const dateElement = document.getElementById("cardDate");
+        const buttonElement = document.getElementById("cardButton");
+
+        if (imageElement) {
+          imageElement.src = data.imageUrl;
+          imageElement.alt = data.title;
+        }
+
+        if (titleElement) {
+          titleElement.textContent = data.title;
+        }
+
+        if (descriptionElement) {
+          descriptionElement.textContent = data.description;
+        }
+
+        if (dateElement) {
+          dateElement.textContent = data.date;
+        }
+
+        if (buttonElement) {
+          buttonElement.textContent = data.buttonText;
+        }
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        updateCard(cardData);
+      });
+    </script>
+  </body>
+</html>

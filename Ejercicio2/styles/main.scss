@@ -1,0 +1,52 @@
+// @import "temaA";
+@import "temaB";
+
+.container {
+  display: flex;
+}
+
+.theme {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+
+  .color-box {
+    width: 100px;
+    height: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+
+  .base {
+    background-color: $base-color;
+  }
+  .important {
+    background-color: $important-color;
+  }
+  .warning {
+    background-color: $warning-color;
+    color: black;
+  }
+
+  .font-primary {
+    font-family: $primary-font;
+  }
+
+  .font-secondary {
+    font-family: $secondary-font;
+  }
+
+  .shadow-box {
+    width: 120px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    box-shadow: $box-shadow;
+  }
+}

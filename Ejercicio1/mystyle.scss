@@ -1,0 +1,62 @@
+@use "sass:color";
+
+$colors: (
+  container-1: red,
+  container-2: darkorange,
+  container-3: darkcyan,
+);
+
+.box {
+  width: 100px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border-radius: 5px;
+  margin: 5px;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+@function text-contrast($bg) {
+  $lightness: color.channel($bg, "lightness", $space: hsl);
+  @if ($lightness > 50%) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
+
+@mixin generate-palette($name, $base, $steps: 4, $step: 18%) {
+  .#{$name} {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .base-color {
+      background-color: $base;
+      color: text-contrast($base);
+    }
+
+    @for $i from 1 through $steps {
+      $bgColor: color.scale($base, $lightness: -($i * $step));
+      .darken-#{$i} {
+        background-color: $bgColor;
+        color: text-contrast($bgColor);
+      }
+    }
+
+    @for $i from 1 through $steps {
+      $bgColor: color.scale($base, $lightness: $i * $step);
+      .lighten-#{$i} {
+        background-color: $bgColor;
+        color: text-contrast($bgColor);
+      }
+    }
+  }
+}
+
+@each $name, $base in $colors {
+  @include generate-palette($name, $base);
+}
