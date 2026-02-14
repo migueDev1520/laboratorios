@@ -153,6 +153,10 @@ footer {
       gap: 0.5rem;
       border-radius: 0;
       border: none;
+
+      &:hover {
+        transform: none;
+      }
     }
   }
 }

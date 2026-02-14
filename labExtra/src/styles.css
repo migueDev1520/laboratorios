@@ -134,4 +134,7 @@ footer {
     border-radius: 0;
     border: none;
   }
+  .list .card-item:hover {
+    transform: none;
+  }
 }/*# sourceMappingURL=styles.css.map */
